@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebeca Andrade - Medalhista Olímpica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1d7d3d;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #fedf00;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        nav a {
+            color: #000;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            color: #fedf00;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        #galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        #galeria img {
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+            border: 5px solid #fedf00;
+            border-radius: 10px;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        #galeria img:hover {
+            transform: scale(1.1);
+        }
+
+        #galeria img:active {
+            transform: scale(1.2);
+        }
+
+        #modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        #modal img {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        #modal:target {
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #fff;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #004d40;
+            color: #fedf00;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        form {
+            background-color: #004d40;
+            padding: 20px;
+            border-radius: 10px;
+            color: #fff;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #fedf00;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            background-color: #ffa500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Rebeca Andrade - Medalhista Olímpica</h1>
+        <nav>
+            <a href="#introducao">Introdução</a>
+            <a href="#trajetoria">Trajetória</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#contato">Contato</a>
+            <a href="#questionario">Questionário</a>
+        </nav>
+    </header>
+
+    <section id="introducao">
+        <h2>Sobre Rebeca Andrade</h2>
+        <h3>Introdução</h3>
+        <p>Rebeca Andrade é uma das ginastas mais talentosas e inspiradoras do Brasil. Sua jornada no mundo da ginástica
+            é marcada por perseverança, dedicação e inúmeras conquistas que a tornaram um ícone do esporte.</p>
+    </section>
+
+    <section id="trajetoria">
+        <h3>Trajetória Acadêmica e Profissional</h3>
+        <p>Desde muito jovem, Rebeca demonstrou um talento natural para a ginástica artística. Sua carreira é repleta de
+            desafios e vitórias, culminando em medalhas olímpicas e mundiais que a posicionaram como uma das melhores
+            ginastas do mundo.</p>
+    </section>
+
+    <section id="paixoes">
+        <h3>Paixões e Interesses</h3>
+        <p>Além da ginástica, Rebeca tem um grande interesse em moda e música. Ela adora compartilhar seu estilo e
+            influências musicais com seus fãs nas redes sociais, mostrando um lado descontraído e criativo fora das
+            competições.</p>
+    </section>
+
+    <section id="vida">
+        <h3>Vida Pessoal</h3>
+        <p>Rebeca valoriza muito sua família e amigos, que a apoiam em cada passo de sua carreira. Ela é conhecida por
+            sua humildade e carinho com todos ao seu redor, sendo uma verdadeira inspiração tanto dentro quanto fora das
+            arenas.</p>
+    </section>
+
+    <section id="inspiracao">
+        <h3>Inspirando com a Ginástica</h3>
+        <p>Rebeca inspira jovens atletas com sua perseverança e dedicação. Seu exemplo mostra que com trabalho duro e
+            paixão, é possível alcançar grandes feitos, mesmo diante de adversidades.</p>
+    </section>
+
+    <section id="impacto">
+        <h3>Impacto na Comunidade Acadêmica</h3>
+        <p>Rebeca é mais do que uma atleta; ela é um ícone para a nova geração de ginastas e esportistas. Seu impacto
+            transcende o esporte, influenciando positivamente a comunidade e servindo como uma mentora para muitos
+            jovens.</p>
+        <a href="https://pt.wikipedia.org/wiki/Rebeca_Andrade" target="_blank">Saiba mais na Wikipedia</a>
+    </section>
+
+    <section id="galeria">
+        <h3>Galeria</h3>
+        <img src="Imagens blog/Imagem 1.jpg" alt="Imagem 1">
+        <img src="Imagens blog/Imagem 2.jpg" alt="Imagem 2">
+        <img src="Imagens blog/Imagem 3.jpg" alt="Imagem 3">
+        <img src="Imagens blog/Imagem 4.jpg" alt="Imagem 4">
+        <img src="Imagens blog/Imagem 5.jpg" alt="Imagem 5">
+    </section>
+
+    <section id="tabela">
+        <h3>Tabela de Conquistas</h3>
+        <table>
+            <tr>
+                <th colspan="2">Ginástica Artística</th>
+            </tr>
+            <tr>
+                <td>Nome completo</td>
+                <td>Rebeca Rodrigues de Andrade</td>
+            </tr>
+            <tr>
+                <td>Apelido</td>
+                <td>Rebe e Beca </td>
+            </tr>
+            <tr>
+                <td>Modalidade</td>
+                <td>Ginástica artística feminina</td>
+            </tr>
+            <tr>
+                <td>Representante</td>
+                <td>Brasileira</td>
+            </tr>
+            <tr>
+                <td>Nascimento</td>
+                <td>8 de maio de 1999 (25 anos), Guarulhos, São Paulo</td>
+            </tr>
+            <tr>
+                <td>Nacionalidade</td>
+                <td>Brasileira</td>
+            </tr>
+            <tr>
+                <td>Compleição</td>
+                <td>Peso: 50 kg • Altura: 1,55 m</td>
+            </tr>
+            <tr>
+                <td>Nível</td>
+                <td>Elite Internacional Sênior</td>
+            </tr>
+            <tr>
+                <td>Treinador(a)(es/s)</td>
+                <td>Francisco Porath</td>
+            </tr>
+            <tr>
+                <td>Ex-treinador(a)(es/s)</td>
+                <td>Keli Tiemi Kitaura, Alexander Alexandrov, Valeri Liukin</td>
+            </tr>
+            <tr>
+                <td>Clube</td>
+                <td>Flamengo</td>
+            </tr>
+            <tr>
+                <td>Período em atividade</td>
+                <td>2012–atualidade</td>
+            </tr>
+            <tr>
+                <td colspan="2"><b>Medalhas</b></td>
+            </tr>
+            <tr>
+                <td>Jogos Olímpicos</td>
+                <td>2 O, 3 P, 1 B</td>
+            </tr>
+            <tr>
+                <td>Campeonato Mundial</td>
+                <td>3 O, 4 P, 2 B</td>
+            </tr>
+            <tr>
+                <td>Jogos Pan-Americanos</td>
+                <td>2 O, 2 P</td>
+            </tr>
+            <tr>
+                <td>Campeonato Pan-Americano</td>
+                <td>4 O, 2 P</td>
+            </tr>
+            <tr>
+                <td>Etapas de Copas do Mundo</td>
+                <td>7 O, 9 P, 3 B</td>
+            </tr>
+        </table>
+    </section>
+    <section id="contato">
+        <h3>Contato</h3>
+        <p>Para entrar em contato com a equipe da Rebeca Andrade, envie um e-mail para: <a
+                href="mailto:contato@rebecaandrade.com">contato@rebecaandrade.com</a></p>
+    </section>
+    <section id="questionario">
+        <h3>Questionário</h3>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </section>
+
+    <footer>
+        <p>©️ 2024 Rebeca Andrade. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
+```
